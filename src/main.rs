@@ -1,5 +1,6 @@
 use std::io::{ Result };
 
+mod routes;
 mod server;
 
 #[actix_web::main]
