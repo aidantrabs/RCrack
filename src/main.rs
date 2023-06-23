@@ -1,9 +1,14 @@
 use std::io::{ Result };
+use std::env::{ set_var };
+use crate::server::{ server };
 
-mod routes;
 mod server;
+mod routes;
+mod rcrack;
+mod data;
 
 #[actix_web::main]
 async fn main() -> Result<()> {
-    server::server().await
+    set_var("RUST_LOG", "debug");
+    server().await
 }
