@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> SHA1 Hash Cracker </h2>
+
+        <form action="/crack" method="post">
+            <label for="hash"> Hash </label> 
+            <br>
+            <input type="text" id="hash" name="hash">
+            <br>
+            <input type="submit" value="Crack">
+        </form>
+    </body>
+</html>
