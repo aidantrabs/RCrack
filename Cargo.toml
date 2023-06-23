@@ -8,3 +8,7 @@ edition = "2021"
 [dependencies]
 actix-web = { version = "4", features = ["macros"] }
 actix-rt = "2"
+tera = "1"
+serde = { version = "1", features = ["derive"] }
+sha1 = "0.10"
+env_logger = "0.10"
